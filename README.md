@@ -1,14 +1,22 @@
-Groupe un (01) travaillant sur le projet numero un (01)
+Groupe 1 travaillant sur le projet 1
 
-Nous nous sommes dirigé sur l'environnement et notre thème est le "Reboisement de la foret du Mayombe"
+Nous nous sommes dirigé sur le projet environnement et notre thème est le "Reboisement de la foret du Mayombe"
 
 Les membres du groupe se constitut de:
-noms:                         role:                            tache:
-NDOUKOU Réel                  Admin repo                       Contact (Formulaire statique, sans traitement backend)
-IKEKE Salomon                 Dirigeant                        Accueil (présentation de la mission, chiffres clés)
-DELLOT Alty                   Membre                           Nos actions (grille des projets menés) 
-PAMBOU Prince                 Membre                           Pied de page (Footer)
-BOTOKO Steven                 Membre                           Evenement avenir (Liste des date et agenda)
+nom: IKEKE Salomon
+Role: Accueil (présentation de la mission, chiffres clés)
+
+nom: NDOUKOU Réel
+Role: Contact (Formulaire statique, sans traitement backend)
+
+nom: DELLOT Alty
+role: Nos actions (grille des projets menés) 
+
+nom: PAMBOU Prince
+role: Pied de page (Footer)
+
+nom: BOTOKO Steven
+role: Evenement avenir (Liste des date et agenda)
 
 Lien live github:
 https://pas encore disponibel
