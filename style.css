@@ -13,10 +13,74 @@
 
 
 
-/* sections evenements */
+/* section evenement */
 
+#evenements{
+    background-color: #ffffff;
+    padding: 60px 100px;
+}
 
+#evenements h2{
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 35px;
+}
 
+.evenement{
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.evenement:last-child{
+    border-bottom: none;
+}
+
+.evenement h3{
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.evenement p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+@media screen and (max-width: 768px){
+
+    #evenements{
+        padding: 40px 20px;
+    }
+
+    #evenements h2{
+        font-size: 28px;
+    }
+
+    .evenement h3{
+        font-size: 20px;
+    }
+
+    .evenement p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+
+    #evenements{
+        padding: 30px 15px;
+    }
+
+    #evenements h2{
+        font-size: 24px;
+    }
+    .evenement h3{
+        font-size: 18px;
+    }
+    .evenement p{
+        font-size: 14px;
+    }
+
+}
 
 
 /* section contacts */
