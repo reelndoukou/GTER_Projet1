@@ -1,3 +1,4 @@
+
 /* meet ton style ici */
 /* Section Accueil */
 
@@ -172,8 +173,665 @@ input[type="checkbox"]{
 }
 
 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #E8F0E9;
+    color: #1B3A2B;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1B3A2B;
+    margin: 20px 50px;
+    font-size: 1.4em;
+}
+
+header nav ul
+{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a
+{
+    text-decoration: none;
+    color: #212529;
+}
+
+.btn-don
+{
+    background-color: #5FA37A;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero-section
+{
+    margin: 0 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-section h1
+{
+    margin-top: 60px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 3em;
+}
+
+.hero-section .description
+{
+    font-size: 1.7em;
+    margin-bottom: 80px;
+}
+
+.project
+{
+    border-radius: 18px;
+    padding: 10px;
+    background-color: transparent;
+    margin-bottom: 80px;
+}
+
+.support
+{
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #7bc5a0;
+    margin-bottom: 80px;
+}
+
+.parent-bloc
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: static;
+}
+
+
+.parent-bloc p
+{
+    font-size: 0.9em;
+}
+
+.child-bloc
+{
+    width: 200px;
+    display: block;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 15px;
+}
+
+.child-bloc:nth-of-type(1)
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.child-bloc:nth-child(3)
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    header
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 5px 10px;
+        font-size: 1.4em;
+    }
+
+    header nav ul
+    {
+        display: none;
+    }
+
+
+    .hero-section
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero-section h1 
+    {
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+    .hero-section .description
+    {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    .project
+    {
+        margin-bottom: 20px;
+    }
+
+    .support
+    {
+        margin-bottom: 20px;
+    }
+
+    .parent-bloc p
+    {
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 10px;
+        font-size: 1.3em;
+    }
+
+    header nav 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header nav ul
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-section
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero-section h1 
+    {
+        margin-top: 20px;
+        font-size: 2.7em;
+    }
+
+    .hero-section .description
+    {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+
+    .project
+    {
+        margin-bottom: 40px;
+    }
+
+    .support
+    {
+        margin-bottom: 40px;
+    }
+
+    .parent-bloc p
+    {
+        font-size: 0.9em;
+    }
+}
+
+    @media only screen and (min-width: 1024px)  {
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 20px;
+        font-size: 1.8em;
+    }
+
+    header nav 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header nav ul
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-don
+    {
+        background-color: #5FA37A;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 0.7em;
+    }
+
+    .hero-section
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero-section h1
+    {
+        margin-top: 20px;
+        font-size: 3.2em;
+    }
+
+    .hero-section .description
+    {
+        font-size: 1.8em;
+        margin-bottom: 50px;
+    }
+
+    .project
+    {
+        font-size: 1.2em;
+        margin-bottom: 60px;
+    }
+
+    .support
+    {
+        font-size: 1.2em;
+        margin-bottom: 60px;
+    }
+
+    .parent-bloc p
+    {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+/* section actions */
+
+
+
+
+
+/* section evenement */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+}
+
+main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+
+.agenda{
+    width:100%;
+    max-width:1200px;
+    background:#fff;
+    padding:60px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.mini-title{
+    font-size:13px;
+    font-weight:bold;
+    color:#7650b8;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+
+.agenda h1{
+    font-size:42px;
+    font-weight:700;
+    color:#222;
+    line-height:1.2;
+    margin-bottom:40px;
+}
+.events{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+.event{
+    padding-bottom:20px;
+}
+
+.date{
+    font-size:20px;
+    color:#333;
+    line-height:1.6;
+}
+
+.date strong{
+    font-weight:700;
+}
+
+.lieu{
+    margin-top:8px;
+    font-size:17px;
+    color:#666;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+@media(max-width:992px){
+
+    .agenda{
+        padding:40px;
+    }
+
+    .agenda h1{
+        font-size:34px;
+    }
+
+    .date{
+        font-size:18px;
+    }
+    .lieu{
+        font-size:16px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    main{
+        padding:30px 15px;
+    }
+    .agenda{
+        padding:30px 20px;
+    }
+    .mini-title{
+        font-size:12px;
+    }
+
+    .agenda h1{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    .events{
+        gap:18px;
+    }
+
+    .date{
+        font-size:17px;
+    }
+
+    .lieu{
+        font-size:15px;
+    }
+}
+@media(max-width:480px){
+
+    .agenda{
+        padding:20px 15px;
+    }
+
+    .agenda h1{
+        font-size:24px;
+    }
+    .date{
+        font-size:16px;
+    }
+
+    .lieu{
+        font-size:14px;
+    }
+
+}
+
+/* section contacts */
+
+
+
+
+
+
+
+
+
 /* section footer */
 
 
+/*couleur*/
+:root {
+  --vert-emeraude: #1b4332;
+  --vert-menthe: #52b788;
+  --blanc-casse: #f8f9fa;
+  --gris-sombre: #212529;
+  --font-titre: 'Poppins', sans-serif;
+  --font-texte: 'Inter', sans-serif;
+}
 
+/*initilisation*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*base de body*/
+body {
+  font-family: var(--font-texte);
+  color: var(--gris-sombre);
+  background-color: var(--blanc-casse);
+}
+
+/*conteneur, utiliser dans toutes les sections*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*PARTIE 2 : MISSIONS*/
+.missions {
+  padding: 80px 0;
+}
+
+/*Titre nos actions sur le terrain*/
+.section-title {
+  font-family: var(--font-titre);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--vert-emeraude);
+  margin-bottom: 40px;
+}
+
+/*grille à 3 colonnes pour les cartes*/
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/*style d'une carte indviduelle*/
+.mission-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+
+/*effet au survole de la souris*/
+.mission-card:hover {
+  transform: translateY(-6px);
+}
+
+/*image en haut de la page*/
+.mission-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/*titre de la carte*/
+.mission-card h3 {
+  font-family: var(--font-titre);
+  font-size: 1.1rem;
+  color: var(--vert-emeraude);
+  padding: 16px 16px 6px;
+}
+
+/*texte descriptif de la carte*/
+.mission-card p {
+  font-size: 0.9rem;
+  color: var(--gris-sombre);
+  padding: 0 16px 20px;
+  line-height: 1.5;
+}
+
+/* ===== PARTIE 3 : PROJETS (sombre) ===== */
+.projets {
+  background-color: var(--blanc-casse);
+  padding-bottom: 60px;
+}
+
+/*baniere verte*/
+.projets-banner {
+  background-color: var(--vert-emeraude);
+  color: var(--blanc-casse);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/*petit texte Projet au-dessus du titre*/
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  color: var(--vert-menthe);
+  margin-bottom: 10px;
+}
+
+/*titre principale dans la banniere*/
+.projets-banner h2 {
+  font-family: var(--font-titre);
+  font-size: 2.2rem;
+}
+
+/*grille à 2 colonnes pour les cartes de projet*/
+.projets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+/*style d'une carte de projet*/
+.projet-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.projet-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.projet-card h3 {
+  font-family: var(--font-titre);
+  font-size: 1.1rem;
+  color: var(--vert-emeraude);
+  padding: 16px 16px 6px;
+}
+
+.projet-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0 16px 20px;
+}
+
+.projets-photo {
+  margin-top: 24px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.projets-photo img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+.projets-photo:hover{
+    transform: translateY(6px);
+}
+
+/*effet sur les deux cartes*/
+.projet-card:hover {
+  transform: translateY(3px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .missions-grid,
+  .projets-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
