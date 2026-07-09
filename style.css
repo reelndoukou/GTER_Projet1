@@ -1,3 +1,4 @@
+
 *
 {
     margin: 0;
@@ -133,6 +134,7 @@ header nav ul li a
     {
         display: none;
     }
+
 
     .hero-section
     {
@@ -323,155 +325,11 @@ header nav ul li a
 
 /* section contacts */
 
-.contacts{
-    background: linear-gradient(180deg,#EAF7EC,#DDEFD9);
-    padding:80px 20px;
-}
-
-.contacts h2,
-.contacts p{
-    text-align:center;
-}
-
-.contacts-h2{
-    color:#1B5E20;
-    font-size:2.3rem;
-    margin-bottom:20px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.contacts-p{
-    max-width:700px;
-    margin:auto;
-    margin-bottom:50px;
-    line-height:1.7;
-    color:#444;
-    font-size:1.5em;
-}
 
 
-.contacts-form{
-    display:flex;
-    justify-content:center;
-}
 
-.contacts-fieldset{
-    width:100%;
-    max-width:750px;
-    background:white;
-    border:none;
-    border-radius:18px;
-    padding:40px;
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
-}
 
-.contacts-legend{
-    padding:6px 10px;
-    background:#2E7D32;
-    color:white;
-    border-radius:8px;
-    font-size:1.2rem;
-    font-weight:bold;
-}
 
-.contacts-p-p{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-    margin-bottom:22px;
-}
-.contacts-p-p label{
-    color:#1B4332;
-    font-weight:bold;
-    font-size: 1.2rem;
-}
-
-.contacts-input,
-.contacts-inp{
-    width:100%;
-    padding:14px;
-    border:2px solid #B7D8BE;
-    border-radius:10px;
-    font-size:15px;
-    transition:.3s;
-    outline:none;
-    box-sizing:border-box;
-}
-
-.contacts-input:focus,
-.contacts-inp:focus{
-    border-color:#2E7D32;
-    box-shadow:0 0 8px rgba(46,125,50,.3);
-}
-
-textarea.contacts-input{
-    min-height:150px;
-    resize:vertical;
-}
-
-input[type="checkbox"]{
-    width:20px;
-    height:20px;
-    accent-color:#2E7D32;
-
-}
-
-.contacts-btn{
-    width:100%;
-    padding:16px;
-    background:#2E7D32;
-    color:white;
-    font-size:18px;
-    font-weight:bold;
-    border:none;
-    border-radius:12px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.contacts-btn:hover{
-    background:#1B5E20;
-    transform:translateY(-3px);
-    box-shadow:0 10px 20px rgba(0,0,0,.18);
-}
-
-.contacts-btn:active{
-    transform:scale(.98);
-}
-
-@media screen and (max-width:768px){
-
-    .contacts{
-        padding:60px 18px;
-    }
-    .contacts-fieldset{
-        padding:30px;
-    }
-    .contacts-h2{
-        font-size:2rem;
-    }
-}
-
-@media screen and (max-width:480px){
-    .contacts{
-        padding:45px 15px;
-    }
-    .contacts-h2{
-        font-size:1.7rem;
-    }
-    .contacts-p{
-        font-size:.95rem;
-    }
-    .contacts-fieldset{
-        padding:20px;
-    }
-    .contacts-legend{
-        font-size:1rem;
-    }
-    .contacts-btn{
-        font-size:16px;
-    }
-}
 
 
 /* section footer */
@@ -479,3 +337,188 @@ input[type="checkbox"]{
 
 
 
+=========
+
+/*couleur*/
+:root {
+  --vert-emeraude: #1b4332;
+  --vert-menthe: #52b788;
+  --blanc-casse: #f8f9fa;
+  --gris-sombre: #212529;
+  --font-titre: 'Poppins', sans-serif;
+  --font-texte: 'Inter', sans-serif;
+}
+
+/*initilisation*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*base de body*/
+body {
+  font-family: var(--font-texte);
+  color: var(--gris-sombre);
+  background-color: var(--blanc-casse);
+}
+
+/*conteneur, utiliser dans toutes les sections*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*PARTIE 2 : MISSIONS*/
+.missions {
+  padding: 80px 0;
+}
+
+/*Titre nos actions sur le terrain*/
+.section-title {
+  font-family: var(--font-titre);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--vert-emeraude);
+  margin-bottom: 40px;
+}
+
+/*grille à 3 colonnes pour les cartes*/
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/*style d'une carte indviduelle*/
+.mission-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+
+/*effet au survole de la souris*/
+.mission-card:hover {
+  transform: translateY(-6px);
+}
+
+/*image en haut de la page*/
+.mission-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/*titre de la carte*/
+.mission-card h3 {
+  font-family: var(--font-titre);
+  font-size: 1.1rem;
+  color: var(--vert-emeraude);
+  padding: 16px 16px 6px;
+}
+
+/*texte descriptif de la carte*/
+.mission-card p {
+  font-size: 0.9rem;
+  color: var(--gris-sombre);
+  padding: 0 16px 20px;
+  line-height: 1.5;
+}
+
+/* ===== PARTIE 3 : PROJETS (sombre) ===== */
+.projets {
+  background-color: var(--blanc-casse);
+  padding-bottom: 60px;
+}
+
+/*baniere verte*/
+.projets-banner {
+  background-color: var(--vert-emeraude);
+  color: var(--blanc-casse);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/*petit texte Projet au-dessus du titre*/
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  color: var(--vert-menthe);
+  margin-bottom: 10px;
+}
+
+/*titre principale dans la banniere*/
+.projets-banner h2 {
+  font-family: var(--font-titre);
+  font-size: 2.2rem;
+}
+
+/*grille à 2 colonnes pour les cartes de projet*/
+.projets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+/*style d'une carte de projet*/
+.projet-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.projet-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.projet-card h3 {
+  font-family: var(--font-titre);
+  font-size: 1.1rem;
+  color: var(--vert-emeraude);
+  padding: 16px 16px 6px;
+}
+
+.projet-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0 16px 20px;
+}
+
+.projets-photo {
+  margin-top: 24px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.projets-photo img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+.projets-photo:hover{
+    transform: translateY(6px);
+}
+
+/*effet sur les deux cartes*/
+.projet-card:hover {
+  transform: translateY(3px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .missions-grid,
+  .projets-grid {
+    grid-template-columns: 1fr;
+  }
+}
