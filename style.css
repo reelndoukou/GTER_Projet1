@@ -15,73 +15,150 @@
 
 /* section evenement */
 
-#evenements{
-    background-color: #ffffff;
-    padding: 60px 100px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-#evenements h2{
-    font-size: 36px;
-    color: #222;
-    margin-bottom: 35px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#222;
 }
 
-.evenement{
-    padding: 20px 0;
-    border-bottom: 1px solid #dddddd;
+main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
 }
 
-.evenement:last-child{
-    border-bottom: none;
+
+.agenda{
+    width:100%;
+    max-width:1200px;
+    background:#fff;
+    padding:60px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-.evenement h3{
-    font-size: 22px;
-    color: #222;
-    margin-bottom: 10px;
+.mini-title{
+    font-size:13px;
+    font-weight:bold;
+    color:#7650b8;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:15px;
 }
 
-.evenement p{
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
+
+.agenda h1{
+    font-size:42px;
+    font-weight:700;
+    color:#222;
+    line-height:1.2;
+    margin-bottom:40px;
 }
-@media screen and (max-width: 768px){
-
-    #evenements{
-        padding: 40px 20px;
-    }
-
-    #evenements h2{
-        font-size: 28px;
-    }
-
-    .evenement h3{
-        font-size: 20px;
-    }
-
-    .evenement p{
-        font-size: 15px;
-    }
+.events{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
 }
-@media screen and (max-width: 480px){
-
-    #evenements{
-        padding: 30px 15px;
-    }
-
-    #evenements h2{
-        font-size: 24px;
-    }
-    .evenement h3{
-        font-size: 18px;
-    }
-    .evenement p{
-        font-size: 14px;
-    }
-
+.event{
+    padding-bottom:20px;
 }
 
+.date{
+    font-size:20px;
+    color:#333;
+    line-height:1.6;
+}
+
+.date strong{
+    font-weight:700;
+}
+
+.lieu{
+    margin-top:8px;
+    font-size:17px;
+    color:#666;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+@media(max-width:992px){
+
+    .agenda{
+        padding:40px;
+    }
+
+    .agenda h1{
+        font-size:34px;
+    }
+
+    .date{
+        font-size:18px;
+    }
+    .lieu{
+        font-size:16px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    main{
+        padding:30px 15px;
+    }
+    .agenda{
+        padding:30px 20px;
+    }
+    .mini-title{
+        font-size:12px;
+    }
+
+    .agenda h1{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    .events{
+        gap:18px;
+    }
+
+    .date{
+        font-size:17px;
+    }
+
+    .lieu{
+        font-size:15px;
+    }
+}
+@media(max-width:480px){
+
+    .agenda{
+        padding:20px 15px;
+    }
+
+    .agenda h1{
+        font-size:24px;
+    }
+    .date{
+        font-size:16px;
+    }
+
+    .lieu{
+        font-size:14px;
+    }
+
+}
 
 /* section contacts */
 
