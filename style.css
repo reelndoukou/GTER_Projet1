@@ -317,11 +317,152 @@ header nav ul li a
 
 
 
-/* sections evenements */
+/* section evenement */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+}
+
+main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
 
 
+.agenda{
+    width:100%;
+    max-width:1200px;
+    background:#fff;
+    padding:60px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.mini-title{
+    font-size:13px;
+    font-weight:bold;
+    color:#7650b8;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
 
 
+.agenda h1{
+    font-size:42px;
+    font-weight:700;
+    color:#222;
+    line-height:1.2;
+    margin-bottom:40px;
+}
+.events{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+.event{
+    padding-bottom:20px;
+}
+
+.date{
+    font-size:20px;
+    color:#333;
+    line-height:1.6;
+}
+
+.date strong{
+    font-weight:700;
+}
+
+.lieu{
+    margin-top:8px;
+    font-size:17px;
+    color:#666;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+@media(max-width:992px){
+
+    .agenda{
+        padding:40px;
+    }
+
+    .agenda h1{
+        font-size:34px;
+    }
+
+    .date{
+        font-size:18px;
+    }
+    .lieu{
+        font-size:16px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    main{
+        padding:30px 15px;
+    }
+    .agenda{
+        padding:30px 20px;
+    }
+    .mini-title{
+        font-size:12px;
+    }
+
+    .agenda h1{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    .events{
+        gap:18px;
+    }
+
+    .date{
+        font-size:17px;
+    }
+
+    .lieu{
+        font-size:15px;
+    }
+}
+@media(max-width:480px){
+
+    .agenda{
+        padding:20px 15px;
+    }
+
+    .agenda h1{
+        font-size:24px;
+    }
+    .date{
+        font-size:16px;
+    }
+
+    .lieu{
+        font-size:14px;
+    }
+
+}
 
 /* section contacts */
 
